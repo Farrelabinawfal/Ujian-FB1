@@ -27,12 +27,6 @@
         display: block;
         margin: 0 auto;
       }
-      footer.bg-dark {
-        background-color: #000000;
-        color: #fff;
-        text-align: center;
-        padding: 20px;
-      }
 
       .text-white {
         color: #fff;
@@ -42,10 +36,10 @@
         text-align: center;
       }
       body {
-  background-image: url("p2.png");
+  background-image: url("bg.jpg");
   background-size: cover;
   background-position: auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 #buy:hover{
 background-color: #000;
@@ -55,34 +49,37 @@ color: #fff;
 </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style="font-size: 30px;"><b>MyProducts</b></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid" style="background-color: #795548;">
+      <a class="navbar-brand" href="index.html" style="font-size: 30px; background-color: #FFD700; color: white;"><b>MyProducts</b></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
         <ul class="navbar-nav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#About_Us">About Us</a>
+                  <a class="nav-link" aria-current="page" href="Utama.html#About_Us"  style="color: white;">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#Products">Products</a>
+                  <a class="nav-link" aria-current="page" href="Utama.html#Products"  style="color: white;">Products</a>
+                </li>
+                <li class ="nav-item">
+                  <a class="nav-link" aria-current="page" href="Butama.html"  style="color: white;">Artikel</a>
                 </li>
         </ul>
       </div>
     </nav>
     <header>
       <div id = "ntah">
-      <div class="card">
+      <div class="card" style="background-color: #3E2723; color: white;">
           <div class="card-body">
-            <div class="card-title"> <h2>Welcome to VAL+ </h2>
-            <a href="https://wa.me/081260627571?text=Apakah%20sudah%20buka%20?" class="btn btn-primary mt-4" style=" width: 10rem;"><b>Beli Produk</b></a>
+            <br><br><br><br>
+            <div class="card-title"> <h2>Welcome to MyProducts</h2><br>
             </div>
           </div>
           </header>
-          <section id="#About_Us" >
+          <section id="About_Us" >
             <div class="card mt-5  mx-auto border-black" style="width: 75rem;">
               <div class="card-body">
               <div class="container text-center">
@@ -143,13 +140,13 @@ color: #fff;
           <section id="Products";>
             <div class="card mt-5 mx-auto mb-5 border-black" style="width:75rem ; text-align: center; background-color: #fff;">
               <div class="card-body">
-              <h3 class="card-title" style="text-align: left;">Product</h3><hr>
+              <h3 class="card-title" style="text-align: left;">Products</h3><hr>
                 <div class="row">
                   <div class="col m-3 mt-3">
                     <div class="card" style="width: 15rem;">
                       <img src="sphagetti.jpg" class="card-img-top" alt="..." style="height:160px ;">
                       <div class="card-body">
-                        <p class="card-text">Sphagetti Aglio Olio</p>
+                        <a class="nav-link" aria-current="page" href="Butama.html#P.1">Sphagetti Aglio Olio</a>
                       </div>
                     </div>
                   </div>
@@ -157,7 +154,7 @@ color: #fff;
                     <div class="card" style="width: 15rem;">
                       <img src="alfredo-364x546.jpg" class="card-img-top" alt="..." style="height:160px ;">
                       <div class="card-body">
-                        <p class="card-text">Sphagetti Alfredo</p>
+                        <a class="nav-link" aria-current="page" href="Butama.html#P.2">Sphagetti Alfredo</a>
                       </div>
                     </div>
                   </div>
@@ -165,7 +162,7 @@ color: #fff;
                     <div class="card" style="width: 15rem;">
                       <img src="amatriciana-384x384.jpg" class="card-img-top" alt="..." style="height:160px ;">
                         <div class="card-body">
-                         <p class="card-text">Sphagetti Amatriciana</p>
+                          <a class="nav-link" aria-current="page" href="Butama.html#P.3">Sphagetti Amatriciana</a>
                       </div>
                     </div>
                   </div>
@@ -173,7 +170,7 @@ color: #fff;
                     <div class="card" style="width: 15rem;">
                       <img src="bolognese.jpg" class="card-img-top" alt="..." style="height:160px ;">
                         <div class="card-body">
-                          <p class="card-text">Sphagetti bolognese</p>
+                          <a class="nav-link" aria-current="page" href="Butama.html#P.4">Sphagetti bolognese</a>
                       </div>
                     </div>
                   </div>
@@ -183,7 +180,7 @@ color: #fff;
                     <div class="card" style="width: 15rem;">
                       <img src="cacio-e-pepe-364x243.jpg" class="card-img-top" alt="..." style="height:160px ;">
                       <div class="card-body">
-                        <p class="card-text">Sphagetti Cacio e Pepe</p>
+                        <a class="nav-link" aria-current="page" href="Butama.html#P.5">Sphagetti Cacio e Pepe</a>
                 </div>
                   </div>
                      </div>
@@ -191,7 +188,7 @@ color: #fff;
                           <div class="card" style="width: 15rem;">
                             <img src="carbonara.jpg" class="card-img-top" alt="..." style="height:160px ;">
                               <div class="card-body">
-                                <p class="card-text">Sphagetti Carbonara</p>
+                                <a class="nav-link" aria-current="page" href="Butama.html#P.6">Sphagetti Carbonara</a>
                                   </div>
                                     </div>
                                       </div>
@@ -199,7 +196,7 @@ color: #fff;
                                           <div class="card" style="width: 15rem;">
                                             <img src="puttanesca-364x243.png" class="card-img-top" alt="..." style="height:160px ;">
                                               <div class="card-body">
-                                                <p class="card-text">Sphagetti Puttanesca</p>
+                                                <a class="nav-link" aria-current="page" href="Butama.html#P.7">Sphagetti Puttanesca</a>
                                                   </div>
                                                     </div>
                                                       </div>
@@ -207,13 +204,13 @@ color: #fff;
                                                         <div class="card" style="width: 15rem;">
                                                                       <img src="alla-norma-384x216.jpg" class="card-img-top" alt="..." style="height:160px ;">
                                                                       <div class="card-body">
-                                                                        <p class="card-text">Sphagetti Alla Norma</p>
+                                                                        <a class="nav-link" aria-current="page" href="Butama.html#P.8">Sphagetti Alla Norma</a>
                                                                       </div>
                                                                     </div>
                                                                   </div>                                                          
                                                                 </div>
-        <a href="https://wa.me/081260627571?text=Apakah%20sudah%20buka%20?" class="btn btn-outline-white mt-4" style=" width: 10rem;"><b>Beli Produk</b></a>
-        <p>Harus pada malam hari</p>
+        <a href="https://wa.me/081260627571?text=Apakah%20sudah%20buka%20?" class="btn btn-outline-dark mt-4" style=" width: 10rem;"><b>Beli Produk</b></a>
+        <p>Harus pada malam hari<br>Klik nama sphagetti untuk menampilkan deskripsi</p>
               </div>
             </div>
            </section>
